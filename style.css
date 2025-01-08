@@ -166,11 +166,13 @@ section{
 }
 
 .main-container .image img {
-    width: 400px;
-    height: 400px;
-    border-radius: 50%;
-    object-fit: cover;
-    object-position: left center;
+    width: 100%;
+    max-width: 400px;
+    height: auto; /* Let height adjust proportionally */
+    aspect-ratio: 1 / 1; /* Force the image to maintain a square aspect ratio */
+    border-radius: 50%; /* Make it circular */
+    object-fit: cover; /* Ensure it stays cropped inside the circle */
+    object-position: center; /* Center the image within the circle */
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -353,9 +355,11 @@ section{
     }
 
     .main-container .image img {
-        width: 120px;
-        height: 120px;
-    } 
+        width: 60%;
+        max-width: 300px;
+        min-width: 150px;
+        aspect-ratio: 1 / 1; /* Maintain circular shape */
+    }
 }
 
 
