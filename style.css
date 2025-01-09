@@ -8,22 +8,22 @@
 }
 
 html {
-    overflow-x: hidden;
+    overflow: auto;
 }
 
 body {
     font-size: 16px;
     width: 100%;
     min-height: 100vh;
-    overflow: hidden;
+    overflow: auto;
     background: linear-gradient(to right, rgb(255, 255, 255), rgb(224, 192, 199));
-    overflow-x: hidden;
 }
 
 nav {
     width: 100%;
     height: 10vh;
     position: sticky;
+    z-index: 2000;
 }
 
 .nav-container {
@@ -111,23 +111,23 @@ nav {
 
 .btn a {
     margin-top: 20px;
-    display: inline-block; /* Make it behave like a button */
-    padding: 10px 20px; /* Add space inside the button */
-    background-color: rgb(214, 82, 117); /* Button background color */
-    color: white; /* Button text color */
-    text-decoration: none; /* Remove underline */
-    border-radius: 5px; /* Rounded corners */
-    font-weight: 700; /* Bold text */
-    font-size: 1rem; /* Text size */
-    text-align: center; /* Center text */
-    transition: all 0.3s ease-in-out; /* Smooth hover effect */
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: rgb(214, 82, 117);
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: 700;
+    font-size: 1rem;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
 }
 
 .btn a:hover {
-    background-color: transparent; /* Make it transparent on hover */
-    color: rgb(214, 82, 117); /* Change text color */
-    border: 2px solid rgb(214, 82, 117); /* Add border on hover */
-    box-shadow: 0 0 40px rgb(214, 82, 117); /* Glow effect */
+    background-color: transparent;
+    color: rgb(214, 82, 117);
+    border: 2px solid rgb(214, 82, 117);
+    box-shadow: 0 0 40px rgb(214, 82, 117);
 }
 
 .nav-container .contact-btn:hover, .nav-container .contact-btn:hover a {
@@ -139,32 +139,6 @@ nav {
 
 .nav-container .links a:hover {
     color: rgb(214, 82, 117);
-}
-
-.dropdown {
-    z-index: 100;
-    position: absolute;
-    top: 0;
-    transform: translateY(-500px);
-    width: 100%;
-    height: auto;
-    backdrop-filter: brightness(40%) blur(3px);
-    box-shadow: 0 0 20px black;
-    transition: 0.2s linear;
-}
-
-.dropdown .links a {
-    color: white;
-    display: flex;
-    text-decoration: none;
-    justify-content: center;
-    padding: 15px 0;
-    align-items: center;
-    transition: 0.2s linear;
-}
-
-.dropdown .links a:hover {
-    background-color: rgb(214, 82, 117);
 }
 
 section {
@@ -181,6 +155,8 @@ section {
     justify-content: space-evenly;
     align-items: center;
     padding: 20px;
+    position: relative;
+    z-index: 1;
 }
 
 .main-container .image {
@@ -188,6 +164,8 @@ section {
     justify-content: center;
     align-items: center;
     margin: 0 auto;
+    position: relative;
+    z-index: 1;
 }
 
 .main-container .image img {
@@ -215,6 +193,34 @@ section {
     line-height: 1.6;
 }
 
+.dropdown {
+    z-index: 3000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(5px);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    transform: translateY(-100%);
+    transition: transform 0.3s ease-in-out;
+}
+
+.dropdown .links a {
+    color: white;
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 1.5rem;
+    transition: 0.2s linear;
+}
+
+.dropdown .links a:hover {
+    background-color: rgb(214, 82, 117);
+}
+
 .content h1 {
     font-size: clamp(1rem, 2rem + 5vw, 3rem);
 }
@@ -228,7 +234,7 @@ section {
     font-weight: 600;
     font-size: clamp(1rem, 1rem + 5vw, 2rem);
     display: inline-block;
-    max-width: 100%; /* Ensure the text doesn't overflow */
+    max-width: 100%;
     text-align: left;
     white-space: nowrap;
     overflow: hidden;
@@ -318,6 +324,44 @@ section {
     filter: drop-shadow(0 0 10px rgb(200, 106, 131));
 }
 
+.education-section {
+    margin: 0px auto;
+    width: 100%;
+    max-width: 100%;
+    text-align: left;
+    line-height: 1.8;
+}
+
+.education-section h1 {
+    margin-top: 200px;
+    color: rgb(240, 127, 157);
+    font-size: 2.5rem;
+    text-align: left;
+    margin-bottom: 20px;
+    text-shadow: 0 0 5px rgb(200, 106, 131);
+}
+
+.education-section h2 {
+    color: rgb(214, 82, 117);
+    margin-bottom: 15px; 
+    font-size: 1.8rem;
+}
+
+.education-section p {
+    color: black;
+    font-size: 1.2rem;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+.education-section strong {
+    color: rgb(214, 82, 117);
+}
+
+.education-item {
+    margin-bottom: 30px; 
+}
+
 @media (max-width: 884px) {
     .main-container {
         flex-direction: column;
@@ -326,7 +370,7 @@ section {
         text-align: center;
     }
 
-    .main-container .content {
+        .main-container .content {
         width: 90%;
     }
 
@@ -350,55 +394,85 @@ section {
 
 @media (max-width: 768px) {
     .content h1 {
-        text-align: center; /* Center the header text */
+        text-align: center;
     }
+
     .image-container {
         margin-top: 20px;
     }
+
     .hamburg {
         display: block;
     }
+
     .nav-container .links {
         display: none;
     }
+
     body {
-        font-size: 14px; /* Adjust font size for mobile */
+        font-size: 14px;
     }
+
     .typewriter span {
-        font-size: clamp(1rem, 1.5vw, 1.5rem); /* Adjust size for smaller screens */
-        white-space: nowrap; /* Prevent wrapping */
-        overflow: hidden; /* Ensure content doesn't overflow */
+        font-size: clamp(1rem, 1.5vw, 1.5rem);
+        white-space: nowrap;
+        overflow: hidden;
     }
+
     .content p {
         font-size: 1rem;
         line-height: 1.5;
     }
+
     .main-container {
-        width: 100%; /* Use full width on very small screens */
-        flex-direction: column; /* Stack content vertically */
-        align-items: center; /* Center items horizontally */
-        text-align: center; /* Align text to the center */
-        margin: 0 auto; /* Ensure proper centering */
-        padding: 0 15px; /* Add padding for breathing space */
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin: 0 auto;
+        padding: 0 15px;
     }
+
     .main-container .content {
-        margin: 0; /* Remove extra margin */
-        width: 100%; /* Use full width for better centering */
+        margin: 0;
+        width: 100%;
     }
+
     .main-container .image img {
-        margin: 0 auto; /* Ensure the image is centered */
+        margin: 0 auto;
     }
+
     .content .typewriter {
-        font-size: 1.2rem; /* Adjust for small screens */
+        font-size: 1.2rem;
     }
+
     .social-links {
         display: flex;
-        justify-content: center; /* Center icons horizontally */
-        margin-top: 20px; /* Add spacing above */
+        justify-content: center;
+        margin-top: 20px;
     }
+
     .content button {
-        margin: 20px auto; /* Center button horizontally */
-        display: block; /* Make it a block element for centering */
+        margin: 20px auto;
+        display: block;
+    }
+
+    .education-section {
+        width: 90%;
+        /* padding: 15px 20px; */
+    }
+
+    .education-section h1 {
+        font-size: 2rem;
+    }
+
+    .education-section h2 {
+        font-size: 1.6rem;
+    }
+
+    .education-section p {
+        font-size: 1rem;
+        margin-bottom: 15px;
     }
 }
 
