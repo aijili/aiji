@@ -203,6 +203,11 @@ section {
 .content .typewriter {
     font-weight: 600;
     font-size: clamp(1rem, 1rem + 5vw, 2rem);
+    display: inline-block; 
+    width: 12ch;
+    text-align: left;
+    white-space: nowrap;
+    padding: 0 10px;
 }
 
 .content .typewriter span {
@@ -342,10 +347,10 @@ section {
     .image-container {
         margin-top: 20px;
     }
-    .hamburger-menu {
+    .hamburg {
         display: block;
     }
-    .desktop-menu {
+    .nav-container .links {
         display: none;
     }
 }
