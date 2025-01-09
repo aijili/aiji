@@ -337,3 +337,15 @@ section {
         color: white;
     }
 }
+
+@media (max-width: 768px) {
+    .image-container {
+        margin-top: 20px;
+    }
+    .hamburger-menu {
+        display: block;
+    }
+    .desktop-menu {
+        display: none;
+    }
+}
