@@ -28,6 +28,17 @@
             </div>
             <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
         </div>
+        <div class="dropdown">
+            <div class="links">
+                <a href="index.html">Home</a>
+                <a href="education.html">Education</a>
+                <a href="">Experience</a>
+                <a href="">Projects</a>
+                <a href="">Skills</a>
+                <a href="mailto:aiji@berkeley.edu?subject=Contact%20Aiji%20Li&body=Hi%20Aiji,%20">Contact Me</a>
+                <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i>
+            </div>
+        </div>
     </nav>
     <section>
         <div class="main-container education-section">
@@ -56,6 +67,16 @@
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
         AOS.init({offset: 0});
+    </script>
+    <script>
+        function hamburg(){
+            const navbar = document.querySelector(".dropdown")
+            navbar.style.transform = "translateY(0px)"
+        }
+        function cancel(){
+            const navbar = document.querySelector(".dropdown")
+            navbar.style.transform = "translateY(-500px)"
+        }
     </script>
 </body>
 </html>
