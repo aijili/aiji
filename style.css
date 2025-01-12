@@ -324,14 +324,14 @@ section {
     filter: drop-shadow(0 0 10px rgb(200, 106, 131));
 }
 
-.education-section {
+.resume-section {
     margin: 50px auto;
     width: 100%;
     text-align: left;
     line-height: 1.8;
 }
 
-.education-section h1 {
+.resume-section h1 {
     margin-top: 50px;
     color: rgb(240, 127, 157);
     font-size: 2.5rem;
@@ -340,42 +340,42 @@ section {
     text-shadow: 0 0 5px rgb(200, 106, 131);
 }
 
-.education-section h2 {
+.resume-section h2 {
     color: rgb(214, 82, 117);
     margin-bottom: 15px;
     font-size: 1.8rem;
 }
 
-.education-section p {
+.resume-section p {
     color: black;
     font-size: 1.2rem;
     line-height: 2;
     margin-bottom: 20px;
 }
 
-.education-section strong {
+.resume-section strong {
     color: rgb(214, 82, 117);
 }
 
-.education-item {
+.resume-item {
     margin-bottom: 40px;
 }
 
 @media (max-width: 1200px) {
-    .education-section {
+    .resume-section {
         width: 85%;
         padding: 30px 40px;
     }
 
-    .education-section h1 {
+    .resume-section h1 {
         font-size: 2.3rem;
     }
 
-    .education-section h2 {
+    .resume-section h2 {
         font-size: 1.7rem;
     }
 
-    .education-section p {
+    .resume-section p {
         font-size: 1.1rem;
         margin-bottom: 20px;
     }
@@ -410,26 +410,26 @@ section {
         color: white;
     }
 
-    .education-section {
+    .resume-section {
         width: 90%;
         padding: 25px 35px;
     }
 
-    .education-section h1 {
+    .resume-section h1 {
         font-size: 2.2rem;
     }
 
-    .education-section h2 {
+    .resume-section h2 {
         font-size: 1.6rem;
     }
 
-    .education-section p {
+    .resume-section p {
         font-size: 1.1rem;
         line-height: 1.8;
         margin-bottom: 20px;
     }
 
-    .education-item {
+    .resume-item {
         margin-bottom: 30px;
     }
 }
@@ -499,21 +499,21 @@ section {
         display: block;
     }
 
-    .education-section {
+    .resume-section {
         width: 90%;
         padding: 20px 30px;
     }
 
-    .education-section h1 {
+    .resume-section h1 {
         margin-top: 20px;
         font-size: 2rem;
     }
 
-    .education-section h2 {
+    .resume-section h2 {
         font-size: 1.5rem;
     }
 
-    .education-section p {
+    .resume-section p {
         font-size: 1rem;
         margin-bottom: 15px;
     }
@@ -524,17 +524,17 @@ section {
         font-size: 0.8rem;
         white-space: nowrap;
     }
-    .education-section {
+    .resume-section {
         width: 95%;
         padding: 15px 20px;
     }
 
-    .education-section h1 {
+    .resume-section h1 {
         margin-top: 20px;
         font-size: 1.8rem;
     }
 
-    .education-section p {
+    .resume-section p {
         font-size: 0.9rem;
     }
 }
