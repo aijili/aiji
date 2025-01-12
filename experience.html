@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aiji Li | Experience</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="experience.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <div class="logo">
+                <a href="index.html"><span>Aiji</span></a>
+            </div>
+            <div class="links">
+                <a href="index.html">Home</a>
+                <a href="education.html">Education</a>
+                <a href="experience.html">Experience</a>
+                <a href="projects.html">Projects</a>
+                <a href="skills.html">Skills</a>
+                <a href="mailto:aiji@berkeley.edu" class="contact-btn">Contact Me</a>
+            </div>
+            <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
+        </div>
+        <div class="dropdown">
+            <div class="links">
+                <a href="index.html">Home</a>
+                <a href="education.html">Education</a>
+                <a href="experience.html">Experience</a>
+                <a href="projects.html">Projects</a>
+                <a href="skills.html">Skills</a>
+                <a href="mailto:aiji@berkeley.edu?subject=Contact%20Aiji%20Li&body=Hi%20Aiji,%20">Contact Me</a>
+                <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i>
+            </div>
+        </div>
+    </nav>
+
+    
+    <section class="experience-section">
+        <h1 data-aos="fade-up" data-aos-duration="1000">Experience</h1>
+        
+        <div class="experience-card" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+            <div class="experience-header">
+                <h2>Youws</h2>
+                <span>Co-Founder, Software Engineer, Sales and Marketing Lead | May 2021 - Present</span>
+            </div>
+            <ul>
+                <li>Built a SaaS web application that allows users to purchase services and apply for counselor and intern positions using WordPress and PHP.</li>
+                <li>Programmed an app, Youwscore, which predicts users' college acceptance probabilities from a model trained on user data using JavaScript, HTML, CSS, SQL, Django, and Bootstrap; helped 700+ students gain an advantage in their applications and validated model accuracy.</li>
+                <li>Developed sales and marketing strategies, created the business pitch, conducted competitive analysis, and acquired paid loyal customers.</li>
+                <li>Hired, trained, and led a team of 9 sales and marketing interns, interviewed and handpicked from an applicant pool of 1,000+.</li>
+            </ul>
+            <p class="italic-text">
+                <a href="https://www.youws.com" target="_blank" rel="noopener noreferrer">youws.com</a>
+            </p>
+        </div>
+    
+        <div class="experience-card" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
+            <div class="experience-header">
+                <h2>Abio</h2>
+                <span>Software Engineering Intern | May 2024 - Sep 2024</span>
+            </div>
+            <ul>
+                <li>Led intern team in designing and developing the corporate website using Webflow and JavaScript, ensuring timeliness and high quality.</li>
+                <li>Conducted and presented comprehensive usability tests, analyzing results to enhance user experience and interface design.</li>
+                <li>Elevated customer engagement by 200% and facilitated product purchases promoting AI and automation in life science.</li>
+            </ul>
+            <p class="italic-text">
+                <a href="https://www.abio.ai/" target="_blank" rel="noopener noreferrer">abio.ai</a>
+            </p>
+        </div>
+    
+        <div class="experience-card">
+            <div class="experience-header">
+                <h2>BLCK UNICRN</h2>
+                <span>Product Development Intern | May 2024 - Sep 2024</span>
+            </div>
+            <ul>
+                <li>Developed and shipped new features to transform the rapidly scaling startup’s corporate website, digital hub platform, and music streaming services using Bubble, tripling user engagement to cultivate a dedicated community of artists and music enthusiasts.</li>
+                <li>Built a native webinar platform to host virtual immersive experiences, increasing scalability and accessibility for creators and audiences.</li>
+                <li>Programmed an automated email notification system to streamline the onboarding process for customers.</li>
+            </ul>
+        </div>
+
+        <div class="btn">
+            <a href="aiji-li-resume.pdf" target="_blank" rel="noopener noreferrer" download="Aiji-Li-Resume">
+                Download Resume
+            </a>
+        </div>
+
+    </section>
+    
+
+    <script>
+        function hamburg() {
+            const navbar = document.querySelector(".dropdown");
+            navbar.style.transform = "translateY(0px)";
+        }
+        function cancel() {
+            const navbar = document.querySelector(".dropdown");
+            navbar.style.transform = "translateY(-500px)";
+        }
+    </script>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            offset: 120, /* Offset from the top of the screen before animation starts */
+            duration: 1000, /* Animation duration in milliseconds */
+            easing: 'ease-in-out', /* Smooth animation */
+            once: true, /* Whether animation should happen only once */
+        });
+    </script>
+
+</body>
+</html>
