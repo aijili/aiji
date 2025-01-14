@@ -361,6 +361,40 @@ section {
     margin-bottom: 40px;
 }
 
+.resume-item h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.resume-item ul {
+    margin: 0; 
+    padding-left: 20px;
+    list-style-position: inside;
+}
+
+.resume-item li {
+    margin-bottom: 5px; 
+    line-height: 1.6;
+}
+
+.logo-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px; 
+    justify-content: start;
+    align-items: center;
+}
+
+.logo-row img {
+    height: 60px; 
+    width: auto; 
+    transition: transform 0.3s ease;
+}
+
+.logo-row img:hover {
+    transform: scale(1.1); 
+}
+
 @media (max-width: 1200px) {
     .resume-section {
         width: 85%;
