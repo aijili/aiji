@@ -551,6 +551,10 @@ section {
         font-size: 1rem;
         margin-bottom: 15px;
     }
+
+    .logo-row img {
+        height: 40px;
+    }
 }
 
 @media (max-width: 480px) {
@@ -570,5 +574,9 @@ section {
 
     .resume-section p {
         font-size: 0.9rem;
+    }
+
+    .logo-row img {
+        height: 30px;
     }
 }
