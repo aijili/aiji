@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aiji Li | Projects</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="experience.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <div class="logo">
+                <a href="index.html"><span>Aiji</span></a>
+            </div>
+            <div class="links">
+                <a href="index.html">Home</a>
+                <a href="education.html">Education</a>
+                <a href="experience.html">Experience</a>
+                <a href="projects.html">Projects</a>
+                <a href="skills.html">Skills</a>
+                <a href="mailto:aiji@berkeley.edu" class="contact-btn">Contact Me</a>
+            </div>
+            <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
+        </div>
+        <div class="dropdown">
+            <div class="links">
+                <a href="index.html">Home</a>
+                <a href="education.html">Education</a>
+                <a href="experience.html">Experience</a>
+                <a href="projects.html">Projects</a>
+                <a href="skills.html">Skills</a>
+                <a href="mailto:aiji@berkeley.edu?subject=Contact%20Aiji%20Li&body=Hi%20Aiji,%20">Contact Me</a>
+                <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i>
+            </div>
+        </div>
+    </nav>
+
+    
+    <section class="experience-section">
+        <h1 data-aos="fade-up" data-aos-duration="1000">Projects</h1>
+        
+        <div class="experience-card">
+            <div class="experience-header">
+                <h2>When2RSF</h2>
+                <span>Fall 2023</span>
+            </div>
+            <ul>
+                <li>Engineered a full-stack web app using HTML, CSS, JavaScript, and Python that reduced peak gym capacity times at UC Berkeley.</li>
+                <li>Trained a dynamic model that predicts when the gym is least crowded with high accuracy by scraping data using Python, SQL, and APIs.</li>
+            </ul>
+            <p class="italic-text">
+                <a href="https://when2rsf.com/" target="_blank" rel="noopener noreferrer">when2rsf.com</a>
+            </p>
+        </div>
+    
+        <div class="experience-card">
+            <div class="experience-header">
+                <h2>Brewista</h2>
+                <span>Spring 2024</span>
+            </div>
+            <ul>
+                <li>Designed and built a customizable drink dispenser using Computer-Aided Design, Arduino, and Object-Oriented Programming.</li>
+                <li>Spearheaded the web development team to design and program a web portfolio using HTML, CSS, and JavaScript.</li>
+                <li>Delegated tasks, provided mentorship, and created a timeline to ensure successful delivery and foster professional growth within the team.</li>
+            </ul>
+            <p class="italic-text">
+                <a href="https://tinyurl.com/brewista2024" target="_blank" rel="noopener noreferrer">tinyurl.com/brewista2024</a>
+            </p>
+        </div>
+    
+        <div class="experience-card">
+            <div class="experience-header">
+                <h2>Choose Your Own Adventure Game </h2>
+                <span>Spring 2024</span>
+            </div>
+            <ul>
+                <li>Developed a graphic world exploration engine enabling players to interact with dynamic game elements, navigate through pseudorandomly generated maps, and save their progress as they complete levels.</li>
+                <li>Leveraged data structures and concepts such as hashmaps, priority queues, weighted quick unions, inheritance, asymptotics, and graphics rendering for seamless map generation and to optimize performance and user experience.</li>
+            </ul>
+        </div>
+
+        <div class="btn">
+            <a href="mailto:aiji@berkeley.edu?subject=Code%20Contact&body=Hi%20Aiji,%20" target="_blank" rel="noopener noreferrer" download="Aiji-Li-Resume">
+                Contact for Code
+            </a>
+        </div>
+
+    </section>
+    
+
+    <script>
+        function hamburg() {
+            const navbar = document.querySelector(".dropdown");
+            navbar.style.transform = "translateY(0px)";
+        }
+        function cancel() {
+            const navbar = document.querySelector(".dropdown");
+            navbar.style.transform = "translateY(-500px)";
+        }
+    </script>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            offset: 120,
+            duration: 1000,
+            easing: 'ease-in-out',
+            once: true, 
+        });
+    </script>
+
+</body>
+</html>

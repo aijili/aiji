@@ -11,23 +11,36 @@
     text-align: center;
     margin-bottom: 30px;
     font-size: 2.5em;
-    color: rgb(240, 127, 157); /* Pink color */
-    text-shadow: 0 0 8px rgb(200, 106, 131); /* Glow effect */
+    color: rgb(240, 127, 157);
+    text-shadow: 0 0 8px rgb(200, 106, 131);
 }
 
 /* Experience Cards */
 .experience-card {
+    position: relative;
     background-color: #fff;
     padding: 20px;
     margin-bottom: 20px;
     border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Add smooth hover effects */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .experience-card:hover {
-    transform: translateY(-5px); /* Slight hover lift */
+    transform: translateY(-5px);
     box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+.logo-container {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+}
+
+.logo-container img {
+    width: 50px;
+    height: auto;
+    border-radius: 4px;
 }
 
 /* Card Header */
@@ -52,7 +65,7 @@
 .experience-card ul li {
     margin-bottom: 10px;
     line-height: 1.5;
-    color: #555; /* Neutral color for readability */
+    color: #555; 
 }
 
 /* Italic Text with Links */
@@ -64,28 +77,28 @@
 }
 
 .italic-text a {
-    color: rgb(240, 127, 157); /* Pink color */
+    color: rgb(240, 127, 157);
     font-style: italic;
     text-decoration: none;
     font-weight: bold;
-    transition: color 0.3s ease; /* Smooth hover effect */
+    transition: color 0.3s ease;
 }
 
 .italic-text a:hover {
     text-decoration: underline;
-    color: rgb(214, 82, 117); /* Slightly darker pink on hover */
+    color: rgb(214, 82, 117);
 }
 
 /* Animations */
 [data-aos] {
-    opacity: 0; /* Hidden before animation starts */
+    opacity: 0; 
     transition-property: opacity, transform;
     transition-duration: 1s;
     transition-timing-function: ease-in-out;
 }
 
 [data-aos].aos-animate {
-    opacity: 1; /* Fully visible after animation */
+    opacity: 1;
     transform: translate(0, 0);
 }
 
@@ -108,7 +121,7 @@
 /* Media Queries */
 @media (max-width: 768px) {
     .experience-section h1 {
-        font-size: 2rem; /* Slightly smaller title on smaller screens */
+        font-size: 2rem;
     }
 
     .experience-card {
@@ -116,7 +129,7 @@
     }
 
     .experience-header h2 {
-        font-size: 1.3em; /* Adjust header font size for smaller screens */
+        font-size: 1.3em;
     }
 
     .experience-header span {
