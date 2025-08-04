@@ -325,18 +325,25 @@ section {
 }
 
 .resume-section {
-    margin: 50px auto;
-    width: 100%;
+    margin: 20px auto;
+    width: 90%;
     text-align: left;
     line-height: 1.8;
+    padding: 0 20px;
+}
+
+.resume-section .content {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .resume-section h1 {
-    margin-top: 50px;
+    margin-top: 20px;
     color: rgb(240, 127, 157);
     font-size: 2.5rem;
     text-align: left;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     text-shadow: 0 0 5px rgb(200, 106, 131);
 }
 
@@ -358,7 +365,7 @@ section {
 }
 
 .resume-item {
-    margin-bottom: 40px;
+    margin-bottom: 25px;
 }
 
 .resume-item h2 {
@@ -381,8 +388,9 @@ section {
     display: flex;
     flex-wrap: wrap;
     gap: 15px; 
-    justify-content: start;
+    justify-content: flex-start;
     align-items: center;
+    width: 100%;
 }
 
 .logo-row img {
@@ -395,10 +403,23 @@ section {
     transform: scale(1.1); 
 }
 
+/* Add this new rule for resume sections to use full width */
+.resume-section .main-container {
+    width: 100%;
+    justify-content: center;
+    padding: 0;
+}
+
+.resume-section .main-container .content {
+    width: 100%;
+    margin-right: 0;
+    margin-top: 0;
+}
+
 @media (max-width: 1200px) {
     .resume-section {
-        width: 85%;
-        padding: 30px 40px;
+        width: 95%;
+        padding: 0 15px;
     }
 
     .resume-section h1 {
@@ -445,8 +466,8 @@ section {
     }
 
     .resume-section {
-        width: 90%;
-        padding: 25px 35px;
+        width: 98%;
+        padding: 0 10px;
     }
 
     .resume-section h1 {
@@ -465,6 +486,10 @@ section {
 
     .resume-item {
         margin-bottom: 30px;
+    }
+
+    .resume-section .main-container .content {
+        width: 100%;
     }
 }
 
@@ -534,12 +559,12 @@ section {
     }
 
     .resume-section {
-        width: 90%;
-        padding: 20px 30px;
+        width: 100%;
+        padding: 0 15px;
     }
 
     .resume-section h1 {
-        margin-top: 20px;
+        margin-top: 15px;
         font-size: 2rem;
     }
 
@@ -555,6 +580,11 @@ section {
     .logo-row img {
         height: 40px;
     }
+
+    .resume-section .main-container .content {
+        width: 100%;
+        margin: 0;
+    }
 }
 
 @media (max-width: 480px) {
@@ -563,12 +593,12 @@ section {
         white-space: nowrap;
     }
     .resume-section {
-        width: 95%;
-        padding: 15px 20px;
+        width: 100%;
+        padding: 0 10px;
     }
 
     .resume-section h1 {
-        margin-top: 20px;
+        margin-top: 15px;
         font-size: 1.8rem;
     }
 
